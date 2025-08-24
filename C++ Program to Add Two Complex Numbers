@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+int main() {
+float real1, imag1, real2, imag2, sumReal, sumImag;
+cout << "Enter real and imaginary part of first number: ";
+cin >> real1 >> imag1;
+cout << "Enter real and imaginary part of second number: ";
+cin >> real2 >> imag2;
+sumReal = real1 + real2;
+sumImag = imag1 + imag2;
+cout << "Sum = " << sumReal << " + " << sumImag << "i";
+return 0;
+}
