@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+    int n;
+    cout << "Enter the number of Terms:";
+    cin >> n;
+
+    int a = 0, b = 1;
+    int sumEvenIndex = 0;
+
+    for (int i = 0; i < n; i++){
+        if (i % 2 == 0) {
+        sumEvenIndex += a;
+}
+   int next = a + b;
+    a = b;
+    b = next;
+}
+
+    cout << "Sum of Fibonacci numbers at even indexes up to " << n << " terms = " << sumEvenIndex;
+
+    return 0;
+}
