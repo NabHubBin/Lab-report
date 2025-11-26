@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+int sumOfNatural(int n){
+    if (n == 0)
+    return 0;
+    else
+        return n + sumOfNatural(n - 1);
+}
+int main(){
+    int n;
+
+    cout << "Enter a Positive integer: ";
+    cin >> n;
+
+    if (n < 0){
+    cout << "Please enter a Positive number." << endl;
+} else {
+    cout << "Sum of first " << n << " natural numbers is: "
+             << sumOfNatural(n) << endl;
+}
+
+    return 0;
+}
