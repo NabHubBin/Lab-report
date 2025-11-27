@@ -1,0 +1,31 @@
+#include <iostream>
+#include <string>
+#include <cctype>
+using namespace std;
+
+bool isPangram(const string &str){
+    bool letters[26] = {false};
+
+    for (char ch : str){
+    if (isalpha(ch)){
+        letters[tolower(ch) - 'a'] = true;
+}
+}
+    for (bool present : letters){
+    if (!present)
+    return false;
+}
+
+    return true;
+}
+
+int main(){
+    string str = "The quick brown fox jumps over the lazy dog";
+
+    if (isPangram(str))
+    cout << "The string is a Pangram." << endl;
+    else
+    cout << "The string is not a Pangram." << endl;
+
+    return 0;
+}
