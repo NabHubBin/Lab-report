@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+    int a[2][2] ={
+        {4, 6},
+        {4, 8}
+};
+
+    int det = a[0][0] * a[1][1] - a[0][1] * a[1][0];
+
+    cout << "Determinant of the 2×2 matrix = " << det << endl;
+
+    return 0;
+}
