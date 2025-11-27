@@ -1,0 +1,22 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main(){
+    string str = "Hello World from ChatGPT";
+
+    cout << "First letters of each word: ";
+
+    bool newWord = true;
+
+    for (char ch : str){
+        if (isspace(ch)){
+        newWord = true;
+} else if (newWord){
+    cout << ch << " ";
+        newWord = false;
+}
+}
+    cout << endl;
+    return 0;
+}
