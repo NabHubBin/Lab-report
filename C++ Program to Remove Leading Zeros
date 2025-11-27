@@ -1,0 +1,23 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+string removeLeadingZeros(const string& str){
+    int i = 0;
+    while (i < str.length() && str[i] == '0'){
+        i++;
+}
+    if (i == str.length()) return "0";
+
+    return str.substr(i);
+}
+
+int main(){
+    string str = "00001234500";
+
+    string result = removeLeadingZeros(str);
+    cout << "Original string: " << str << endl;
+    cout << "After removing leading Zeros: " << result << endl;
+
+    return 0;
+}
